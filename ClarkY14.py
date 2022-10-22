@@ -10,6 +10,7 @@ y_ux = -4.2179 * (x ** 6) + 14.217 * (x ** 5) - 18.83 * (x ** 4) + 12.525 * (x *
 y_lx = 3.6716 * (x ** 6) - 12.228 * (x ** 5) + 15.902 * (x ** 4) - 10.189 * (x ** 3) + 3.3337 * (
                 x ** 2) - 0.4815 * (
                x) - 0.0076  # Function of the lower surface
+
 """Slopes"""
 dy_ux = sp.diff(y_ux, x)  # Slope for upper surface
 dy_lx = sp.diff(y_lx, x)  # Slope for lower surface
