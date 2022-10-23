@@ -91,6 +91,8 @@ def c_moment_le(cp_u1, cp_l1, cp_u2, cp_l2, dy_u, dy_l, a):
 
     fa = cp_u1 * dy_u
     fb = cp_l1 * dy_l
+    fc = cp_u2 * dy_u
+    fd = cp_l2 * dy_l
 
     print("RESULTADOS PARA Cm-LE A 23.5 KIAS")
     for i, value_1 in np.ndenumerate(cp_u1):
@@ -106,8 +108,6 @@ def c_moment_le(cp_u1, cp_l1, cp_u2, cp_l2, dy_u, dy_l, a):
                             print(f"Cm (AoA {value_5}°)\t= {cm1:.3f}")
 
     print('-' * 31)
-    fc = cp_u2 * dy_ux
-    fd = cp_l2 * dy_lx
 
     print("RESULTADOS PARA Cm-LE A 43.45 KIAS")
     for n, value_6 in np.ndenumerate(cp_u2):
