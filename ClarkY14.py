@@ -32,13 +32,13 @@ cp_lx_2 = np.array([-13.194*x**6+29.089*x**5-22.063*x**4+7.1925*x**3-2.2882*x**2
                     77.432*x**6-177.19*x**5+155.47*x**4-68.718*x**3+18.012*x**2-3.4564*x+0.5511,
                     -129.06*x**6+333.31*x**5-332.88*x**4+164.17*x**3-43.967*x**2+7.4045*x-0.8805])
 
-""" Angle Of Attack """
+""" ANGLES OF ATTACKS """
 alpha = np.array([0, 4, -4])
 
 
 def c_axial_normal_1(cp_u, cp_l, dy_u, dy_l, a):
-    """Calculate el coefficient axial y normal para 23.5 KIAS"""
-    #  c = 0.8
+    """Calculate the axial and normal coefficient for 23.5 KIAS"""
+
     fa = cp_u * dy_u
     fb = cp_l * dy_l
 
@@ -62,8 +62,8 @@ def c_axial_normal_1(cp_u, cp_l, dy_u, dy_l, a):
 
 
 def c_axial_normal_2(cp_u, cp_l, dy_u, dy_l, a):
-    """Calculate el coefficient axial para 43.45 KIAS"""
-    #  c = 0.8
+    """Calculate the axial and normal coefficient for 43.45 KIAS"""
+
     fa = cp_u * dy_u
     fb = cp_l * dy_l
 
@@ -87,8 +87,7 @@ def c_axial_normal_2(cp_u, cp_l, dy_u, dy_l, a):
 
 
 def c_moment_le(cp_u1, cp_l1, cp_u2, cp_l2, dy_u, dy_l, a):
-    """ Calculate los coefficient de momento con respect al leading edge """
-    #  c = 0.8
+    """ Calculate the coefficients of moment w/ respect to the leading edge Cmle"""
 
     fa = cp_u1 * dy_u
     fb = cp_l1 * dy_l
